@@ -5,6 +5,6 @@ public class Concatenation {
         System.out.println("Resistence" + " is " + "useless");
         System.out.println("Solution: " + 42);
 
-        System.out.println("Vogons".repeat(3)); // Java 11
+        System.out.println("Bravissima Lucia ".repeat(5)); // Java 11
     }
 }

@@ -5,7 +5,7 @@ public class Array {
         int[] array = new int[12];
         array[0] = 7;
 
-        System.out.println(array[0] + ", " + array[11]);
+        System.out.println(array[0] + ", " + array[12]);
 
         int value = array[5];
         System.out.println(value);

@@ -3,7 +3,7 @@ package s043;
 public class SwitchEnum {
 
     public static void main(String[] args) {
-        WeekendDay day = WeekendDay.SATURDAY;
+        WeekendDay day = WeekendDay.SUNDAY;
 
         // ...
 

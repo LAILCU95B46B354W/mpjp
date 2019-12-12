@@ -71,7 +71,7 @@ public class ParameterPassing {
         int array[] = { 42 };
 
         System.out.println("array[0] is " + array[0]);
-        reference(array);
+        reference((int[])null);
         System.out.println("array[0] now is " + array[0]);
     }
 }

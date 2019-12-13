@@ -8,7 +8,7 @@ public class Main {
 		for (int i = 0; i < dogs.length; i++) {
 			dogs[i] = new Dog();
 		}
-	    dogs [5].bark();
+		dogs[5].bark();
 	}
 
 }

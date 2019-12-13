@@ -58,6 +58,7 @@ public class AboutString {
 		System.out.println("trim [" + " la la la ".trim() + "]");
 
 		String x = null;
-		System.out.println("Sort of safe toString(): " + String.valueOf(x));
+		System.out.println("Sort of safe toString(): " + String.valueOf(x));// Metodo che converte la x in una stringa,
+																			// è una sorta di costruttore di oggetti
 	}
 }

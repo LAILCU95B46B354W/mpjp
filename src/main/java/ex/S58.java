@@ -38,10 +38,14 @@ public class S58 {
 	 * @param value an integer
 	 * @return "zero" for 0 ... "nine" for 9, or "other"
 	 */
-	public static String asWord(int value) {
+	public static String asWord(int value) { // si può svolgere anche con l'if: if (value < 0 || value > 9) {
+												// return "other";
+												// } else if (value == 0) {
+												// return "zero";
 		switch (value) {
 		case 0:
-			return "zero";
+			return "zero"; // non inseriamo il break perchè il return è già un comando per terminare il
+							// blocco quindi non ha senso inserire anche il break
 
 		case 1:
 			return "one";
@@ -85,7 +89,17 @@ public class S58 {
 	 * @return a letter in [A, F]
 	 */
 	public static char vote(double percentile) {
-		// TODO
+		if (percentile > 90) {
+			return 'A';
+		} else if (percentile > 80) {
+			return 'B';
+		} else if (percentile > 70) {
+			return 'C';
+		} else if (percentile > 60) {
+			return 'D';
+		} else if (percentile > 50) {
+			return 'E';
+		}
 		return 'F';
 	}
 
@@ -116,8 +130,32 @@ public class S58 {
 	public static int[] sort(int a, int b, int c) {
 		int[] result = new int[3];
 
-		// TODO
-
+		if (a < b) {
+			if (c < a) {
+				result[0] = c;
+				result[1] = a;
+				result[2] = b;
+			} else if (c > b) {
+				result[0] = a;
+				result[1] = b;
+				result[2] = c;
+			} else {
+				result[0] = a;
+				result[1] = c;
+				result[2] = b;
+			}
+			if (a > b) {
+				if (c > b) {
+					result[0] = a;
+					result[1] = c;
+					result[2] = b;
+				} else if (c < b) {
+					result[0] = a;
+					result[1] = b;
+					result[2] = c;
+				}
+			}
+		}
 		return result;
 	}
 }

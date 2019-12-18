@@ -1,15 +1,15 @@
 package s073;
 
 public class Dog extends Mammal {
-    private Tail tail;
+	private Tail tail;
 
-    public Dog(int gestationDays, int tailLen) {
-        super(gestationDays);
-        this.tail = new Tail(tailLen);
-    }
+	public Dog(int gestationDays, int tailLen) {
+		super(gestationDays);
+		this.tail = new Tail(tailLen);
+	}
 
-    @Override
-    public String toString() {
-        return "Dog [tail=" + tail + ", gestation=" + gestation + "]";
-    }
+	@Override
+	public String toString() {
+		return "Dog [tail=" + tail.toString() + ", gestation=" + gestation + "]";
+	}
 }

@@ -1,11 +1,11 @@
 package s075;
 
 public class Dog {
-	private static final String DEFAULT_NAME = "???";
+	private static final String DEFAULT_NAME = "???"; // finale rappresenta una costante
 	private static final int DEFAULT_WEIGHT = 7;
 
-	private String name;
-	private int weight;
+	private String name; // proprietà del cane
+	private int weight; // proprietà del cane
 
 	public Dog() {
 		this(DEFAULT_NAME, DEFAULT_WEIGHT);
@@ -19,8 +19,8 @@ public class Dog {
 		this(DEFAULT_NAME, weight);
 	}
 
-	public Dog(String name, int weight) {
-		this.name = name;
+	public Dog(String name, int weight) { // la proprietà name viene inizializzata con il parametro name
+		this.name = name; // passo i parametri
 		this.weight = weight;
 	}
 
@@ -28,8 +28,8 @@ public class Dog {
 		return name;
 	}
 
-    @Override
-    public String toString() {
-        return "S71Dog [name=" + name + ", weight=" + weight + "]";
-    }
+	@Override
+	public String toString() {
+		return "S71Dog [name=" + name + ", weight=" + weight + "]";
+	}
 }
